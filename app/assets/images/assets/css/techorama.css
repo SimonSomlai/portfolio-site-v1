@@ -1,0 +1,199 @@
+/*---------------------*/
+/* STRUCTURE & GENERAL */
+/*---------------------*/
+@font-face{
+    font-family: "ropasansregular";
+	src: url(../fonts/ropasans-regular-webfont.woff);}
+
+body{
+	line-height: 140%;
+	font-weight: lighter;
+	color: #404040;
+	font-family: "Helvetica", "Arial", sans-serif;
+	font-size: 1rem;}
+	div.wrapper{
+		width: 965px;
+		margin: 0 auto;}
+	h1,h2{
+		font-family: "ropasansregular", "Helvetica", "Neue", "Arial", "Helvetica", "Geneva", sans-serif;}
+	p{
+		margin-bottom: 15px;}
+	a{
+		text-decoration: none;}
+
+
+/*---------------------*/
+/*    HEADER & NAV     */
+/*---------------------*/
+header{
+	text-align: center;
+	box-shadow: 2px 2px 20px #666660;
+	margin-bottom: 30px;
+	text-transform: uppercase;}
+	header div{
+		background-image: url(../../images/bg-techorama.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-color: #d1b2c0;
+		height: 350px;}
+		h1{
+			padding-top: 87px;
+			margin-bottom: 30px;
+			font-size: 4.3rem;
+			text-shadow: 2px 2px 2px #343333;
+			color: #d511a0;}
+		h2{
+			width: 350px;
+			margin: 0 auto;
+			font-size: 2.2rem;
+			color: white;
+			background: url(../media/bg-lines.gif) left center no-repeat, url(../media/bg-lines.gif) right center no-repeat;}
+	/* Navbar*/
+	nav{
+		background-color: #dbc4cf;
+		border-top: 1px solid #d511a0;;
+		border-bottom:1px solid #d511a0;;
+		height: 48px;
+		position: relative;}
+		nav ul{
+			padding-top: 13px;}
+			nav ul li{
+				display: inline;
+				font-size: 1rem;
+				padding: 14px;
+				border-left: 1px solid #ffffff;
+				vertical-align: middle;}
+				nav ul li a{
+						color: #740f85;
+						font-weight: bold;}
+				nav ul li a:hover{
+						color: white;
+						text-decoration: underline;}
+		/* Ticket */
+		nav img{
+			position: absolute;
+			top: -15px;
+			width: 140px;
+			height: 90px;}
+
+
+/*---------------------*/
+/* 		SIDE           */
+/*---------------------*/
+/* Aside */
+aside{
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;}
+	/* Twitter Header */
+	div.side{
+		text-align: center;
+		height: 125px;
+		background-image: url(../../images/bg-techorama.gif);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		color: white;
+		box-shadow: 2px 2px 20px #666660;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		margin-bottom: 15px;}
+		/* Techorama */
+		div.side h3{
+			color: white;
+			text-transform: uppercase;
+			font-size: 1.3rem;
+			padding-top: 50px;
+			margin-bottom: 10px;
+			font-weight: bold;}
+		/* @TechoramaBE*/
+		div.side h4{
+			text-shadow: 2px 2px 3px rgba(0,0,0,0.3);}
+			
+	/*Articles Twitterfeed*/
+	article.side{
+		margin-bottom: 15px;
+		border-bottom: 1px solid #e8e8e8;
+		font-size: 0.9rem;}
+		/*Article Headings*/
+		article.side h5{
+			color: black;
+			margin-bottom: 8px;}
+			article.side h5 span{
+				font-weight: bold;}
+		/* Links & hashtags*/
+		article.side p a, article.side p span {
+			color: #d511a0;}
+			article.side p a:hover{
+				text-decoration: underline;}
+		/* Reply, RT & Fav*/
+		article.side li{
+			display: inline;
+			padding-left: 19px;
+			background-image: url("../media/tweet-actions-sprite.gif");
+			background-repeat: no-repeat;
+			background-position: 0px 0px ;
+			line-height: 100%;}
+			article.side li a{
+				font-weight: bold;
+				color: #B6B6B6;
+				font-size: 0.9rem;}
+			article.side li a:hover{
+				color: #666666;
+				text-decoration: underline;}
+			article.side li.reply:hover{
+				background-position: 0px -14px ;}
+			article.side li.retweet{
+				background-position: 0px -75px ;}
+			article.side li.retweet:hover{
+				background-position: 0px -88px ;}
+			article.side li.fav{
+				background-position: 0px -30px ;}
+			article.side li.fav:hover{
+				background-position: 0px -45px ;}
+/*---------------------*/
+/* 		CONTENT  	   */
+/*---------------------*/
+section{
+	display: inline-block;
+	width: 600px;
+	margin-right: 60px;}
+	/* Heading*/
+	h3{
+		font-size: 1.6rem;
+		margin-bottom: 15px;}
+	/* Main Articles */
+	article.main{
+		background-color: #f6f6f6;
+		padding: 10px;
+		margin-bottom: 25px;}
+	/* Article Headings*/
+	h4{
+		font-weight: bold;
+		margin-bottom: 5px;}
+		/* Continue Reading Buttons*/
+		article.main a{
+			padding: 6px;
+			color: white;
+			border: 2px solid #d511a0;
+			background-color: #d511a0;
+			font-weight: bold;}
+		article.main a:hover{
+			background-color: white;
+			color:#d511a0;}
+/*---------------------*/
+/* 		FOOTER 		   */
+/*---------------------*/
+footer{
+	text-align: center;
+	color: white;
+	height: 80px;
+	background-color: #d2119a;}
+	footer p{
+		padding-top: 35px;}
+	footer a{
+		font-weight: bold;
+		color: white;}
+	footer a:hover{
+		text-decoration: underline;}
+

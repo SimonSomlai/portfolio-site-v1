@@ -1,0 +1,174 @@
+/*---------------------*/
+/* STRUCTURE & GENERAL */
+/*---------------------*/
+body{
+	color:#5f5352;
+	font-size: 1rem;
+	font-family: "Garamond", "Cambria", "Times New Roman", "Times", serif;}
+	a{
+		text-decoration: none;
+		color: white;}
+	h3{
+		text-transform: uppercase;
+		font-size: 2.2rem;
+		letter-spacing: 0.3rem;
+		display: inline-block;}
+
+/*Clearfix*/
+.cf:before, .cf:after{
+	content: "";
+	display: table;}
+.cf:after{
+	clear:both;}
+/*Floats*/
+.left{
+	float: left;}
+.right{
+	float: right;}
+/*---------------------*/
+/*    HEADER & NAV     */
+/*---------------------*/
+header{
+	color: white;
+	height: 300px;
+	background-image: url(../../images/header.jpg);
+	text-align: center;}
+		h1{
+			padding-top: 75px;
+			font-size: 6rem;
+			text-transform: capitalize;
+			font-style: italic;}
+		h2{
+			margin: 0 auto;
+			width: 600px;
+			font-size: 1.4rem;
+			margin-bottom: 75px;
+			background: url(../media/line.gif) left center no-repeat, url(../media/line.gif) right center no-repeat;}
+/*Navbar*/
+nav{
+	margin-bottom: 35px;}
+	nav ul li{
+		display: inline;
+		text-transform: uppercase;}
+	nav ul li:after{
+		content:"|";}
+	nav ul li:last-child:after{
+		content: none;}
+		/*Navbar Links*/
+		nav ul li a{
+			letter-spacing: 0.2rem;
+			font-size: 1.2rem;}
+		nav ul li a:hover{
+			text-decoration: underline;}
+/*---------------------*/
+/* 		CONTENT  	   */
+/*---------------------*/
+/* Articles*/
+article{
+	margin: 0 auto;
+	padding: 40px 60px;
+	width: 85%;}
+	/* Article Titles*/
+	article h3{
+		padding-top: 7px;
+		border-top: 1px solid #3D3D3D;}
+	article h3 span{
+		padding: 2px;
+		background-color: #e2ede7;}
+	/* First Paragraph*/
+	article h3 + p{
+		margin-top: 20px;}
+	/*All Paragraphs*/
+	article p{
+		width: 500px;
+		display: inline-block;
+		font-size: 1.5rem;
+		line-height: 130%;}
+	article	p + p{
+			margin-top: 20px;}
+	/* Floating Images*/
+	article img.left{
+		margin-right: 50px;}
+	article img.right{
+		margin-right: 60px;}
+
+/*Section*/
+section{
+	position: relative;
+	text-align: center;
+	background-color: #ACACAC;
+	color: white;}
+	/* Our Menus*/
+	section h3{
+		display: block;
+		padding-top: 30px;
+		margin-bottom: 30px;}
+	/* Different menus */
+	section div.menu{
+		background-image: url(../media/swirl.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+		display: inline-block;
+		height: 350px;
+		width: 30%;}
+		/* Weekend menu, ...*/
+		.menu h4{
+			font-size: 2rem;
+			margin-bottom: 30px;
+			text-transform: lowercase;}
+		/* Starter, ... */
+		.menu h5{
+			font-size: 1.8rem;
+			text-transform: lowercase;}
+		h5 + p{
+			margin-bottom: 30px;}
+	section div.award{
+		color: #d0ce13;
+		font-size: 0.7rem;
+		text-transform: lowercase;
+		position: absolute;
+		height: 100px;
+		right: 20px;
+		top: -50px;
+		width: 100px;
+		background-image: url(../media/wreath.png);
+		background-position: center;
+		background-repeat: no-repeat;}
+		div.award p{
+			margin-top: 25px;}
+
+/*---------------------*/
+/* 		FOOTER 		   */
+/*---------------------*/
+footer{
+	padding-left: 150px;
+	line-height: 140%;}
+	footer div{
+		display: inline-block;
+		width: 20%;
+		padding: 20px 0px;
+		vertical-align: top;}
+		footer h3{
+			font-size: 1.2rem;
+			padding-bottom: 15px;
+			letter-spacing: 0.2rem;
+			text-transform: lowercase;}
+		footer li{
+			padding-left: 30px;
+			background-image: url("../media/icons.png");
+			background-repeat: no-repeat;
+			background-position: left center;
+			background-size: 12%;}
+			footer li.fb{
+				background-position: 0px -9px ;}
+			footer li.mail{
+				background-position: 0px -66px ;}
+				footer li a{
+					color:#54b785;}
+				footer li a:hover{
+					text-decoration: underline;}
+		time{
+			display: inline-block;
+			margin-bottom: 10px;
+			font-weight: bold;}
+	

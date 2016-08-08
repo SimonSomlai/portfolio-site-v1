@@ -1,0 +1,28 @@
+<div id="form-main" class="cf">
+  	<div id="form-div" class="cf">
+	<%= form_for(@contact) do |f|  %>
+	   <p class="name">
+	  <%= f.text_field :name, required: true, :placeholder => "Your Name", :class => "validate[required,custom[onlyLetter],length[0,100]] feedback-input", :id => "name" %>
+	  </p>
+
+	  <p class="email">
+	  <%= f.email_field :email, required: true, :placeholder => "Your Email", :class => "validate[required,custom[email]] feedback-input", :id => "email"  %>
+	  </p>
+
+	  <p class="text">
+	  <%= f.text_area :message, as: :text, :class => "validate[required,length[6,300]] feedback-input", :id => "comment" %>
+	  </p>
+	
+	  <div class="hidden">
+	  <%= f.label :nickname %><br/>
+	  <%= f.text_field :nickname, hint: "Leave this blank - spam filter" %>
+	  </div>
+	
+	  <div class="submit">
+	    <%= f.submit "Send Message", :id => "button-blue" %>
+	    <div class="ease"></div>
+	  </div>
+	<% end %>
+</div>
+</div>
+

@@ -1,0 +1,21 @@
+<div class="projectshow cf">
+	<h1>
+	<%= @project.projectname %> 
+	</h1>
+	<a href="<%= @project.preview.url %>" data-lightbox="<%= @project.projectname %>"><%= image_tag(@project.preview.url :medium) %></a>
+	<div class="description">
+	<p><%= raw(@project.projectdescription) %> </p>
+	<a class="viewproject" href="<%= asset_path(@project.projectname) %>">See Project</a>
+	</div>
+
+
+<% if logged_in? %>
+<%= link_to 'Edit', edit_project_path(@project), :class => "admin" %> |
+<%= link_to 'Back', projects_path, :class => "admin" %> 
+<% end %>
+
+</div>
+<br/>
+
+
+ 

@@ -1,0 +1,32 @@
+
+<%= form_for @project, html: {multipart: true} do |f| %>
+  <div class="form">
+  <%= f.label :projectname, "Project Name" %>
+  <%= f.text_field :projectname %>
+  </div>
+
+  <div class="form">
+  <%= f.label :projectdetails, "Project Summary" %>
+  <%= f.text_field :projectdetails %>
+  </div>
+
+  <div class="formeditor">
+  <%= f.label :projectdescription, "Project Description" %>
+  <%= f.text_area :projectdescription %>
+  </div>
+
+  <div class="form">
+  <%= f.label :image, "Header Image" %>
+  <%= f.file_field :image %>
+  </div>
+
+  <div class="form">
+  <%= f.label :preview, "Preview Image" %>
+  <%= f.file_field :preview %>
+  </div>
+
+  <div class="form">
+    <%= f.submit %>
+  </div>
+<% end %>
+

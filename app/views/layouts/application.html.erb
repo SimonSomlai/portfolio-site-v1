@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simon's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+</head>
+<body>
+
+<div style="position: absolute; visibility: hidden" id="notice"><%= notice %></div>
+<div id="ohsnap"></div>
+
+<header>
+	<nav class="effect">
+		<ul id="menu">
+			<li><%= link_to("About", about_path, :class => "effect") %></li>
+			<li><%= link_to("Projects", projects_path, :class => "effect") %></li>
+			<li><a class="effect" href="https://www.visualcv.com/simon-somlai" target="_blank">Resumé</a></li>
+			<li><%= link_to("Contact", new_contact_path, :class => "effect") %></li>
+		</ul>
+	</nav>
+</header>
+
+<div class="container">
+<%= yield %>
+</div>
+
+<footer> 
+	<ul>
+		<li><a href="https://twitter.com/BasicGrowth">Twitter</a></li> | 
+		<li><a href="https://www.linkedin.com/in/simon-somlai-27a4648a?trk=nav_responsive_tab_profile_pic">LinkedIn</a></li> | 
+		<li><a href="https://github.com/SimonSomlai">GitHub</a></li> |
+		<li><%= link_to("Contact", new_contact_path) %></a></li>
+	</ul>
+	<p> 
+		<% if logged_in? %>
+		<%= current_user.username %> |
+		<%= link_to "Logout", logout_path %>
+		<% end -%>
+	</p>
+	
+ </footer>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+</body>
+</html>

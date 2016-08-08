@@ -1,0 +1,10 @@
+<div class="formpage">
+<h1>Editing Project</h1>
+
+<%= render 'form' %>
+<%= javascript_include_tag "//cdn.tinymce.com/4/tinymce.min.js" %>
+<script>tinymce.init({ selector:'textarea' });</script>
+
+<%= link_to 'Show', @project, :class => "admin" %> |
+<%= link_to 'Back', projects_path, :class => "admin"  %>
+</div>

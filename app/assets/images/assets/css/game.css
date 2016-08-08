@@ -1,0 +1,95 @@
+body {
+    font-family: 'Patua One', "Times New Roman", cursive;
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+}
+h1 span {
+    display: block;
+    color: yellow;
+}
+
+h2 {
+    margin-bottom:12px;
+}
+img {
+    max-width: 100%;
+}
+
+#container {
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    left:0;
+    right:0;
+    bottom: 0;
+    padding: 8px 8px 12px 8px;
+    background-color: rgba(255,255,255,.2);
+    display: block;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+}
+
+.carousel {
+    height: 427px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.carousel li {
+    display: none;
+}
+.sequence {
+    margin-bottom: 20px;
+}
+.sequence li {
+    display: inline;
+}
+
+.sequence li a {
+    display: inline-block;
+    padding: 8px;
+    background-color: #FFFFFF;
+    color: #000000;
+    text-decoration: none;
+
+}
+.sequence .finish {
+    float: right;
+}
+.sequence li a:hover, .sequence li a.active {
+    background-color: yellow;
+}
+
+.sequence a{
+    margin-right: 2px;
+}
+
+.votes {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+.votes li {
+    margin-bottom: 4px;
+    line-height: 20px;
+}
+.votes li span {
+    background-color: red;
+    color: #FFFFFF;
+    display: inline-block;
+    padding: 3px 3px 3px 5px;
+    margin-left: 10px;
+    min-width: 10px;
+}

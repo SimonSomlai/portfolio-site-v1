@@ -1,0 +1,147 @@
+/*Had niet zoveel tijd over - css beetje sneller gedaan :/ */
+
+/*---------------------*/
+/* STRUCTURE & GENERAL */
+/*---------------------*/
+body{
+	color: #404453;
+	font-family: "Georgia", "Cambria", "Times New Roman", serif;
+	font-size: 1rem;}
+	h1,h2,h3,h4, nav li{
+		text-transform: uppercase;
+		font-family: "Franklin Gothic", "ITC Franklin Gothic", "Arial", sans-serif;}
+		h2{
+			text-align: center;
+			font-size: 6rem;
+			font-weight: bold;
+			margin-bottom: 30px;}
+		h3{
+			font-size: 2.4rem;
+			color: #16c6c0;}
+		a{
+			text-decoration: none;
+			color:#404453 ;}
+		.left{
+			float: left;}
+		.right{
+			float: right;}	
+/*---------------------*/
+/*    HEADER & NAV     */
+/*---------------------*/
+header{
+	background-color: #f0fcff;
+	line-height: 180%;
+	padding: 30px 0px;
+	position: fixed;
+	width: 100%;}
+	h1{
+		font-size: 3rem;
+		line-height: 100%;
+		width: 40%;
+		display: inline-block;
+		margin-left: 30px;}
+	nav{
+		display: inline-block;}
+		nav li{
+			line-height: 190%;
+			display: inline-block;
+			margin-right: 15px;
+			font-size: 1.8rem;}
+	@media(max-width: 1205px){
+		nav.nav{
+			display: none;}
+		header{
+			background-image: url(../../assets/media/menu.png);
+			background-repeat: no-repeat;
+			background-position: 95% 50%;
+		
+			background-size: 50px 50px;
+		}
+		h1{
+			width: 70%;
+		}
+		}
+/*---------------------*/
+/* 		CONTENT  	   */
+/*---------------------*/
+/* Who-section */
+section.who{
+	background-color: #467fd3;
+	padding: 150px 0px;}
+	section.who h2{
+		color: white;}
+		section.who ul{
+			text-align: center;
+			width: 80%;
+			margin: 0 auto;}
+	section.who ul li{
+		display: inline-block;}
+		section.who img{
+			height: 150px;
+			width: 150px;
+			margin-right: 60px;}
+
+/* What-section */
+section.what{
+	background-color: #f0fcff;}
+	section.what h2{
+		padding-top: 50px;}
+	section.what article{
+		width: 80%;
+		margin: 0 auto;
+		padding: 50px 0px;}
+		section.what img{
+			height: 250px;
+			width: 250px;
+			margin-right: 5%;}
+		section.what h3{
+			margin-bottom: 50px;}
+		section.what p{
+			line-height: 130%;
+			font-size: 2rem;}
+
+/* How-section */
+section.how{
+	background-color: #404453;
+	color: white;
+	text-align: center;}
+	section.how article{
+		background-image: url(../../images/test-tube-long.png);
+		background-repeat: no-repeat;
+		background-size: 200px 200px;
+		background-position: 50% 0%;
+		display: inline-block;
+		width: 30%;
+		margin-left: 3%;
+		padding-top: 230px ;
+		padding-bottom: 60px;}
+	section.how article:nth-child(3){
+		background-image: url(../../images/test-tube.png);}
+	section.how article:nth-child(4){
+		background-image: url(../../images/test-tube-purple.png);}	
+		section.how h2{
+			padding-top: 50px;}
+		section.how h3{
+				margin-bottom: 20px;
+				font-size: 1.6rem;}
+		section.how p{
+			line-height: 150%;}
+/*---------------------*/
+/* 		FOOTER 		   */
+/*---------------------*/
+footer{
+	color: #acbcc1;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	text-align: center;}
+	h4{
+		font-size: 1rem;
+		margin-bottom: 10px;}
+	footer p{
+		font-size: 0.8rem;
+		line-height: 150%;}
+	footer span{
+		font-weight: bold;
+		color:#404453 ;}
+
+
